@@ -1,61 +1,72 @@
 :root {
-  --primary: #74ee15;
-  --secondary: #15d5ee;
-  --secondary-background: #15d5ee22;
-  --tertiary: #ee15e0;
-  --tertiary-background: #ee15e022;
-  --background: #242727;
+    --primary: #FBA21F;
+    --secondary: #1f77fb;
+    --tertiary: #1ffba3;
+    --background: #282828;
 }
 
 body {
-	font-family: 'Manrope', sans-serif;
-	font-size: 16px;
-	color: #222;
-	background-color: #ECF0F1;
-	text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    color: var(--secondary);
+    background-color: var(--background);;
+    text-align: center;
+}
+
+h2, h3 {
+    color: var(--primary);;
 }
 
 .container {
-	padding: 0;
-	margin-top: 40px;
+    padding: 0;
+    margin-top: 2rem;
 }
 
 footer {
-	margin-top: 60px;
+    margin-top: 4rem;
 }
 
 ol {
-	list-style-position: inside;
-}
-ul {
-	list-style-type: none;
+    list-style-position: inside;
 }
 
 a {
-	color: #2574A9;
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.view {
+    position: relative;
+    margin: 2rem auto 0;
+    border: 1px dashed var(--primary);
+    border-radius: 1rem;
+    padding: 20px;
+    width: 60%;
+    min-width: 400px;
 }
 
 input {
-  display: block;
-  position: relative;
-  margin: 10px auto;
+    display: block;
+    position: relative;
+    margin: 1rem auto;
 
 }
-input#button {
-  width: 230px;
-}
-.view {
-  position:relative;
-  margin: auto;
-  margin-top: 40px;
-  border: 1px  solid  #aaa;
-  padding: 20px;
-  width: 60%;
-  min-width: 400px;
-}
-/****** Logo Div Styling ******/
 
-img {
-	margin: 20px auto 0 auto;
-	display: block;
+input[type=submit] {
+    width: 250px;
+    font-size: 16px;
+    padding: 0.5rem;
+    border-radius: 3px;
+    background-color: var(--secondary);
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transition: background-color 150ms ease-in-out;
+    background-color: var(--primary);
 }
